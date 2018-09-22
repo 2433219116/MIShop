@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':mi-annotations')
+    //编译时注解生成代码
+//    implementation 'com.squareup:javapoet:1.11.1'
+    //辅助Processor自动发现
+//    implementation 'com.google.auto.service:auto-service:1.0-rc4'
+    //注解处理辅助类
+//    implementation 'com.google.auto:auto-common:0.10'
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

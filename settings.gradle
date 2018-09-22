@@ -1,0 +1,1 @@
+include ':shop', ':mi-annotations', ':mi-compiler', ':mi-core', ':mi-ec'
