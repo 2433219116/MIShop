@@ -14,6 +14,15 @@ import com.efanzyhang.mi.ec.main.EcBottomFragment;
 import com.efanzyhang.mi.ec.sign.ISignListener;
 import com.efanzyhang.mi.ec.sign.SignInDelegate;
 
+/**
+ * 项目名：MIShop
+ * 包名：com.efanzyhang.mishop
+ * 文件名：ShopActivity
+ * 创建者：efan.zyhang
+ * 创建时间：2018/8/8 16:36
+ * 描述： 主界面，根Activity，继承ProxyActivity的就是多Fragment依赖的Activity
+ */
+
 public class ShopActivity extends ProxyActivity implements
         ISignListener,
         ILauncherListener {

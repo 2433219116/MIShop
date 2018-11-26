@@ -13,7 +13,7 @@ import com.efanzyhang.mi.core.util.toast.TUtil;
  * 文件名：BottomItemFragment
  * 创建者：efan.zyhang
  * 创建时间：2018/9/17 13:56
- * 描述： TODO
+ * 描述： 底部item对应的Fragment，监听并处理退出事件
  */
 public abstract class BottomItemFragment extends MishopFragment implements View.OnKeyListener {
 

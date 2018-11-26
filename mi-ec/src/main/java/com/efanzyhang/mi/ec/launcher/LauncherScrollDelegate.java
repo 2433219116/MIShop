@@ -27,7 +27,7 @@ import java.util.ArrayList;
  * 文件名：LauncherScrollDelegate
  * 创建者：efan.zyhang
  * 创建时间：2018/9/13 16:18
- * 描述： TODO
+ * 描述： 运行时展示滑动界面
  */
 public class LauncherScrollDelegate extends MishopFragment implements OnItemClickListener {
 

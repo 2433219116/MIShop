@@ -30,7 +30,7 @@ import butterknife.BindView;
  * 文件名：IndexFragment
  * 创建者：efan.zyhang
  * 创建时间：2018/9/18 13:57
- * 描述： TODO
+ * 描述： 主页Fragment实现
  */
 public class IndexFragment extends BottomItemFragment {
 

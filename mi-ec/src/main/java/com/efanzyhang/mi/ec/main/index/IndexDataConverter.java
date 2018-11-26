@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * 文件名：IndexDataConverter
  * 创建者：efan.zyhang
  * 创建时间：2018/9/19 15:38
- * 描述： TODO
+ * 描述： 主页数据处理
  */
 public class IndexDataConverter extends DataConverter {
     @Override

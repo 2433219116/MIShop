@@ -17,25 +17,30 @@ import java.util.LinkedHashMap;
  * 文件名：EcBottomFragment
  * 创建者：efan.zyhang
  * 创建时间：2018/9/18 13:55
- * 描述： TODO
+ * 描述： 主页BottomItem Fragment具体现实
  */
 public class EcBottomFragment extends BaseBottomFragment {
+
+
+    /**
+     * 实现抽象方法
+     * @param builder 构建Item的静态工厂
+     * @return   返回Item的HashMap
+     */
     @Override
     public LinkedHashMap<BottomTabBean, BottomItemFragment> setItems(ItemBuilder builder) {
+
         final LinkedHashMap<BottomTabBean,BottomItemFragment> items=new LinkedHashMap<>();
 
         items.put(new BottomTabBean("{fa-home}","主页"),new IndexFragment());
         items.put(new BottomTabBean("{fa-sort}","分类"),new SortFragment());
-//        for (Map.Entry<BottomTabBean, BottomItemFragment> item : items.entrySet()) {
-//            final BottomTabBean key = item.getKey();
-//            final BottomItemFragment value = item.getValue();
-//            for ()
-//        }
         items.put(new BottomTabBean("{fa-compass}","发现"),new IndexFragment());
         items.put(new BottomTabBean("{fa-shopping-cart}","购物车"),new IndexFragment());
         items.put(new BottomTabBean("{fa-user}","我的"),new IndexFragment());
+
         return builder.addItems(items).build();
     }
+
 
     @Override
     public int setIndexDelegate() {
