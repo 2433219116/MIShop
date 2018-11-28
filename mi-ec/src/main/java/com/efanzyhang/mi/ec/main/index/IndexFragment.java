@@ -36,7 +36,7 @@ public class IndexFragment extends BottomItemFragment {
 
     @BindView(R2.id.rv_index)
     RecyclerView mRecyclerView;
-    @BindView(R2.id.srl_index)
+    @BindView(R2.id.swl_index)
     SwipeRefreshLayout mSwipeRefreshLayout;
     @BindView(R2.id.tb_index)
     Toolbar mToolbar;
@@ -47,7 +47,8 @@ public class IndexFragment extends BottomItemFragment {
     @BindView(R2.id.icon_index_message)
     IconTextView mIconMessage;
 
-    private RefreshHandler mRefreshHandler;
+    //ReFresh Handler
+    private RefreshHandler mRefreshHandler = null;
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
@@ -68,15 +69,24 @@ public class IndexFragment extends BottomItemFragment {
                 .get();
     }
 
+    /**
+     * 初始化ReFreshLayout
+     */
     private void initRefreshLayout() {
         mSwipeRefreshLayout.setColorSchemeResources(
                 android.R.color.holo_blue_bright,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light
         );
+        //设置动画以及位置 由大变小，在由小变大
         mSwipeRefreshLayout.setProgressViewOffset(true, 120, 300);
     }
 
+    /**
+     * Fragment的懒加载，Fragmention实现的
+     *
+     * @param savedInstanceState
+     */
     @Override
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
@@ -86,7 +96,7 @@ public class IndexFragment extends BottomItemFragment {
 
     @Override
     public Object setLayout() {
-        return R.layout.fragment_sort;
+        return R.layout.fragment_index;
     }
 
 

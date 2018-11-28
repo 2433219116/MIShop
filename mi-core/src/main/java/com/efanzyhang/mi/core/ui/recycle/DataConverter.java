@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 文件名：DataConverter
  * 创建者：efan.zyhang
  * 创建时间：2018/9/19 0:39
- * 描述： RecycleView的抽象数据转换基类
+ * 描述： RecycleView的抽象数据转换基类（也就是bean）
  */
 public abstract class DataConverter {
 

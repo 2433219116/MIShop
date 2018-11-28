@@ -19,7 +19,7 @@ import okhttp3.ResponseBody;
  * 文件名：DebugInterceptor
  * 创建者：efan.zyhang
  * 创建时间：2018/8/16 16:12
- * 描述： 测试拦截器
+ * 描述： 测试拦截器，模拟请求地址
  */
 public class DebugInterceptor extends BaseInterceptor {
 

@@ -13,7 +13,7 @@ import java.util.HashMap;
  * 文件名：MIShop
  * 创建者：efan.zyhang
  * 创建时间：2018/8/3 16:36
- * 描述： TODO
+ * 描述： MiShop同一管理
  */
 public final class MIShop {
     /**
@@ -29,6 +29,10 @@ public final class MIShop {
         return Configurator.getInstance();
     }
 
+    /**
+     *
+     * @return 配置类的获取
+     */
     public static Configurator getConfiguration() {
         return Configurator.getInstance();
     }
@@ -52,6 +56,11 @@ public final class MIShop {
 
     }
 
+    /**
+     * 获取全局Hnadler对象
+     *
+     * @return 配置项中的HANDLER
+     */
     public static Handler getHandler() {
         return getConfiguration(ConfigKeys.HANDLER);
     }

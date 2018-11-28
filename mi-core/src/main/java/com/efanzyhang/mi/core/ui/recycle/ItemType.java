@@ -10,6 +10,7 @@ package com.efanzyhang.mi.core.ui.recycle;
  */
 public class ItemType {
 
+    //之所已定义int类型是因为BRAVHY框架设置item类型为int
     public static final int TEXT=1;
     public static final int IMAGE=2;
     public static final int TEXT_IMAGE=3;

@@ -66,7 +66,7 @@ public class SignInDelegate extends MishopFragment {
                     })
                     .failure(new IFailure() {
                         @Override
-                        public void onFailure() {
+                        public void onFailure(String e) {
                             LUitl.w("USER_PROFILE", "Failure");
                             TUtil.warning(getContext(),"登录失败");
                         }

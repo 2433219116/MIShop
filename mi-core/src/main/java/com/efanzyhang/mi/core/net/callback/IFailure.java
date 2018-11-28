@@ -9,5 +9,5 @@ package com.efanzyhang.mi.core.net.callback;
  * 描述： TODO
  */
 public interface IFailure {
-    void onFailure();
+    void onFailure(String e);
 }
